@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="html5">
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+<div align="center">
+    <h1 align="center">Calculator</h1>
+
+    <img src="calculator.jpg" name="headerimg" height="225" width="225" alt="Calculator Image">
+
+    <form action="#" method="post">
+        <!-- Input 1 -->
+        <label for="input1">Input 1: </label>
+        <input type="number" id="input1" name="input1"><br><br>
+
+        <!-- Input 2 -->
+        <label for="input2">Input 2: </label>
+        <input type="number" id="input2" name="input2"><br><br>
+
+        <!-- Select Operation -->
+        <label for="operation">Select Operation: </label>
+        <select id="operation" name="operation">
+            <option value="">Select...</option>
+            <option value="ADD">ADD</option>
+            <option value="SUBTRACT">SUBTRACT</option>
+            <option value="MULTIPLY">MULTIPLY</option>
+            <option value="DIVIDE">DIVIDE</option>
+        </select><br><br>
+
+        <input type="image" src="calc.jpg" name="submit" height="80" width="80" alt="Submit Button">
+
+        <input type="image" src="reset.jpg" name="reset" height="80" width="80" alt="Reset Button" onclick="this.form.reset(); return false;">
+        <br><br>
+    </form>
+</div>
+</body>
+</html>
