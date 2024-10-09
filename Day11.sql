@@ -37,7 +37,7 @@ CREATE TABLE Orders (
   RequiredDate DATE,
   ShippedDate DATE,
   Freight DECIMAL(10, 2),
-  FOREIGN KEY (CustomerID) REFERENCES tblCustomers(CustomerID)
+  FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 );
 SELECT *from Orders;
 
@@ -48,7 +48,7 @@ CREATE TABLE OrderDetails (
   Quantity INT CHECK (Quantity > 0),
   Discount DECIMAL(10, 2),
   PRIMARY KEY (OrderID, ProductID),
-  FOREIGN KEY (OrderID) REFERENCES tblOrders(OrderID)
+  FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
 );
 SELECT *from OrderDetails;
 
